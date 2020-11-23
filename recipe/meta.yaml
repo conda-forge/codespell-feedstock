@@ -1,5 +1,5 @@
 {% set name = "codespell" %}
-{% set version = "1.17.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 25a2ecd86b9cdc111dc40a30d0ed28c578e13a0ce158d1c383f9d47811bfcd23
+  sha256: dd9983e096b9f7ba89dd2d2466d1fc37231d060f19066331b9571341363c77b8
 
 build:
   noarch: python
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
   run:
-    - python
+    - python >=3.5
 
 test:
   commands:
@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://github.com/codespell-project/codespell
-  license: GPL-2.0-or-later
+  license: GPL-2.0-only
   license_family: GPL
   license_file: COPYING
   summary: Fix common misspellings in text files, usually source code.

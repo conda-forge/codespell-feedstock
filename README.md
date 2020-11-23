@@ -3,11 +3,13 @@ About codespell
 
 Home: https://github.com/codespell-project/codespell
 
-Package license: GPL-2.0
+Package license: GPL-2.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/codespell-feedstock/blob/master/LICENSE.txt)
 
 Summary: Fix common misspellings in text files, usually source code.
+
+Development: https://github.com/codespell-project/codespell
 
 Fix common misspellings in text files. It's designed primarily for
 checking misspelled words in source code, but it can be used with
