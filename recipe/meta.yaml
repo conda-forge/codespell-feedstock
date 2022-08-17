@@ -1,5 +1,5 @@
 {% set name = "codespell" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 19d3fe5644fef3425777e66f225a8c82d39059dcfe9edb3349a8a2cf48383ee5
+  sha256: 3dce0cd1348d277f8d934d1d4dcbbf510f9ddfd1b9005e9b25fb983189962561
 
 build:
   noarch: python
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
 
 test:
   commands:
@@ -43,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - dopplershift
+    - larsoner
