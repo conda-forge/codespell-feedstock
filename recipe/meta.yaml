@@ -1,5 +1,5 @@
 {% set name = "codespell" %}
-{% set version = "2.2.5" %}
+{% set version = "2.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6d9faddf6eedb692bf80c9a94ec13ab4f5fb585aabae5f3750727148d7b5be56
+  sha256: a8c65d8eb3faa03deabab6b3bbe798bea72e1799c7e9e955d57eca4096abcff9
 
 build:
   noarch: python
