@@ -20,6 +20,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
+    - setuptools_scm
   run:
     - python >={{ python_min }}
 
@@ -28,6 +30,7 @@ test:
     - python {{ python_min }}
   commands:
     - codespell --version
+    - python -c "import codespell_lib; assert codespell_lib.__version__ == '{{ version }}', codespell_lib.__version__"
 
 about:
   home: https://github.com/codespell-project/codespell
